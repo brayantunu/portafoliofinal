@@ -140,13 +140,13 @@ export default {
 
 /* boton descargar cv */
 button {
-  --border-radius: 30px;
+  /* --border-radius: 30px; */
   --border-width: 3px;
   appearance: none;
   position: relative;
   padding: 1em 2em;
   border: 0;
-  background-color: #212121;
+  /* background-color: #212121; */
   font-family: "Roboto", Arial, "Segoe UI", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -229,7 +229,7 @@ button:active {
   background-color: rgb(46, 46, 46);
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 10px; 
 }
 
 .bn::before {
