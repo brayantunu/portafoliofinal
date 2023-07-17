@@ -1,7 +1,9 @@
 <template>
+
+  <!-- https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg -->
   <div class="hero min-h-screen">
     <div class="hero-content flex-col lg:flex-row">
-      <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+      <img src="../assets/brayan.jpeg"
         class="rounded-lg shadow-2xl xlx imagen2"    />
       <div class="background-overlay">
         <div class="contenedor">
@@ -13,8 +15,6 @@
       </div>
     </div>
   </div>
-
-
 
   <div class="content">
     <h3 class="animated-title">SOBRE MI</h3>
@@ -29,6 +29,7 @@
       <p>Aquí puedes escribir detalles sobre ti.</p>
     </div>
   </div>
+
 </template>
 <script>
 export default {
@@ -41,6 +42,34 @@ export default {
 .card-body {
   margin: auto;
 }
+
+
+
+
+/* imagen de presentacion */
+.imagen2 {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .imagen2 {
+    /* Estilos para dispositivos móviles */
+    /* Por ejemplo, puedes ajustar el tamaño o posición de la imagen */
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 769px) {
+  .imagen2 {
+    /* Estilos para dispositivos de escritorio */
+    /* Por ejemplo, puedes ajustar el tamaño o posición de la imagen */
+    width: 15%;
+    margin-left: 20px;
+  }
+}
+
 
 /* presentacion  */
 .hero {
@@ -68,10 +97,10 @@ export default {
   text-align: center;
   padding: 2rem;
   color: #ffffff;
+
 }
 
 .hero-content img {
-  width: 30%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -281,6 +310,7 @@ button:active {
 
 /* animacion de sobre mi */
 .content {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
