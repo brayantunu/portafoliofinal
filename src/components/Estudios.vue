@@ -1,16 +1,18 @@
 <template>
-
   <!-- https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg -->
   <div class="hero min-h-screen">
     <div class="hero-content flex-col lg:flex-row">
-      <img src="../assets/brayan.jpeg"
-        class="rounded-lg shadow-2xl xlx imagen2"    />
+
+      <div class="card rounded-lg">
+        <img src="../assets/brayan.jpeg" alt="">
+      </div>
+      <!-- <img src="../assets/brayan.jpeg" class="rounded-lg shadow-2xl xlx imagen2" /> -->
       <div class="background-overlay">
         <div class="contenedor">
           <h1>¡Hola! Soy Brayan Tunubala<span>&#160;</span></h1>
         </div>
         <p class="py-6">Apasionado desarrollador Fullstack con un enfoque especial en el
-área de desarrollo de software.</p>
+          área de desarrollo de software.</p>
         <button class="bn">Download CV</button>
       </div>
     </div>
@@ -29,7 +31,6 @@
       <p>Aquí puedes escribir detalles sobre ti.</p>
     </div>
   </div>
-
 </template>
 <script>
 export default {
@@ -37,12 +38,56 @@ export default {
 }
 </script>
 <style>
-
-
-.card-body {
-  margin: auto;
+/* card foto presentacion */
+.card {
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
+.card img {
+  z-index: 1;
+  padding: 10px;
+
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
 
 
 
@@ -59,6 +104,11 @@ export default {
     width: 50%;
     margin: 0 auto;
   }
+
+  .card {
+    width: 53%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 769px) {
@@ -68,6 +118,12 @@ export default {
     width: 15%;
     margin-left: 20px;
   }
+
+  .card {
+    width: 15%;
+    margin-left: 20px;
+  }
+
 }
 
 
@@ -101,7 +157,7 @@ export default {
 }
 
 .hero-content img {
-  border-radius: 10px;
+  border-radius:20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -258,7 +314,7 @@ button:active {
   background-color: rgb(46, 46, 46);
   left: 0;
   top: 0;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .bn::before {
