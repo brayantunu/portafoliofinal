@@ -4,7 +4,7 @@
     <div class="hero-content flex-col lg:flex-row">
 
       <div class="card rounded-lg">
-        <img src="../assets/brayan.jpeg" alt="">
+        <img src="../assets/brayan.jpeg" class="photo" alt="">
       </div>
       <!-- <img src="../assets/brayan.jpeg" class="rounded-lg shadow-2xl xlx imagen2" /> -->
       <div class="background-overlay">
@@ -22,13 +22,24 @@
     <h3 class="animated-title">SOBRE MI</h3>
   </div>
 
-  <div class="container">
+  <div class="container-estudios">
     <div class="image-container">
       <img src="../assets/spiderman.avif" alt="Mi imagen" class="animated-image">
     </div>
     <div class="info-container">
-      <h3>Información sobre mí</h3>
-      <p>Aquí puedes escribir detalles sobre ti.</p>
+      <div class="con-info">
+        <h2>Soy Brayan Tunubala</h2>
+        <h3>Buscar.</h3>
+        <p>
+          Apasionado desarrollador Fullstack con un enfoque especial en el
+          área de desarrollo de software. Mi objetivo se basa en la colaboración, excelencia responsabilidad
+          y aprendizaje continuo y estoy constantemente buscando oportunidades para crecer y aprender
+          .Estoy entusiasmada por aplicar mis habilidades y conocimientos soy creativo y tengo una
+          mentalidad abierta para enfrentar nuevos desafíos. Estoy dispuesto a asumir responsabilidades y
+          colaborar de manera efectiva con otros profesionales y así contribuir en equipo.
+        </p>
+      </div>
+
     </div>
   </div>
 </template>
@@ -49,7 +60,7 @@ export default {
   border-radius: 20px;
 }
 
-.card img {
+.card .photo {
   z-index: 1;
   padding: 10px;
 
@@ -91,40 +102,6 @@ export default {
 
 
 
-/* imagen de presentacion */
-.imagen2 {
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .imagen2 {
-    /* Estilos para dispositivos móviles */
-    /* Por ejemplo, puedes ajustar el tamaño o posición de la imagen */
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .card {
-    width: 53%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 769px) {
-  .imagen2 {
-    /* Estilos para dispositivos de escritorio */
-    /* Por ejemplo, puedes ajustar el tamaño o posición de la imagen */
-    width: 15%;
-    margin-left: 20px;
-  }
-
-  .card {
-    width: 15%;
-    margin-left: 20px;
-  }
-
-}
 
 
 /* presentacion  */
@@ -156,8 +133,8 @@ export default {
 
 }
 
-.hero-content img {
-  border-radius:20px;
+.hero-content .photo {
+  border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -366,7 +343,7 @@ button:active {
 
 /* animacion de sobre mi */
 .content {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,33 +368,26 @@ button:active {
   }
 }
 
+
 /* sobre mi informacion detallada */
-.container {
+.container-estudios {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top:40px
 }
 
 .image-container {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.info-container {
-  flex: 1;
-  padding: 20px;
+  width: 40%;
 }
 
 .animated-image {
-  max-width: 80%;
-  max-height: 80%;
   border: 2px solid transparent;
   border-radius: 50%;
   animation: animateBorder 3s linear infinite;
+  margin: auto;
+  width: 60%;
 }
+
+
 
 @keyframes animateBorder {
   0% {

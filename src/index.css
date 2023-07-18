@@ -31,3 +31,59 @@ body {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+
+/* imagen de presentacion */
+.imagen2 {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .imagen2 {
+      /* Estilos para dispositivos móviles */
+      /* Por ejemplo, puedes ajustar el tamaño o posición de la imagen */
+      width: 50%;
+      margin: 0 auto;
+    }
+  
+    .card {
+      width: 53%;
+      margin: 0 auto;
+    }
+    .image-container{
+      width: 50%;
+      margin: 0 auto;
+    }
+    .container-estudios {
+      flex-direction: column; /* Cambia a una sola columna */
+    }
+    .info-container {
+    text-align: justify;
+      margin: auto;
+      }
+      .con-info{
+        margin: 40px 30px 20px 30px   ;
+      }
+  }
+  
+  @media (min-width: 769px) {
+    .imagen2 {
+      /* Estilos para dispositivos de escritorio */
+      /* Por ejemplo, puedes ajustar el tamaño o posición de la imagen */
+      width: 15%;
+      margin-left: 20px;
+    }
+    .card {
+      width: 15%;
+      margin-left: 20px;
+    } 
+    .info-container {
+        width: 60%;
+        text-align: justify;
+      
+      }
+      .info-container p{
+        padding-right: 70px;
+      }
+  }
