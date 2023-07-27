@@ -42,6 +42,29 @@
 
     </div>
   </div>
+
+
+  <div class="container-estudios">
+    <div class="info-container">
+      <div class="con-info">
+        <h2>Soy Brayan Tunubala</h2>
+        <h3>Buscar.</h3>
+        <p>
+          Apasionado desarrollador Fullstack con un enfoque especial en el
+          área de desarrollo de software. Mi objetivo se basa en la colaboración, excelencia responsabilidad
+          y aprendizaje continuo y estoy constantemente buscando oportunidades para crecer y aprender
+          .Estoy entusiasmada por aplicar mis habilidades y conocimientos soy creativo y tengo una
+          mentalidad abierta para enfrentar nuevos desafíos. Estoy dispuesto a asumir responsabilidades y
+          colaborar de manera efectiva con otros profesionales y así contribuir en equipo.
+        </p>
+      </div>
+
+    </div>
+    <div class="image-container">
+      <img src="../assets/spiderman.avif" alt="Mi imagen" class="animated-image">
+    </div>
+  </div>
+  
 </template>
 <script>
 export default {
@@ -372,11 +395,18 @@ button:active {
 /* sobre mi informacion detallada */
 .container-estudios {
   display: flex;
-  margin-top:40px
+  margin:30px 20px;
+  border-radius: 50px;
+ background: #e0e0e0;
+ box-shadow: 20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+  
+ margin-bottom: 30px;
 }
 
 .image-container {
   width: 40%;
+  margin: 20px auto;
 }
 
 .animated-image {
