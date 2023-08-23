@@ -1,7 +1,7 @@
 <template>
   <div class="navbar">
     <div class="navbar-start">
-      <a class="btn btn-ghost normal-case text-xl">BRAYAN TUNUBALA</a>
+      <a class="btn btn-ghos  text-xl">BRAYAN TUNUBALA</a>
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1">
@@ -20,6 +20,9 @@ export default {
 <style>
 .navbar {
   background: transparent;
+}
+.btn-ghost{
+  color: white;
 }
 
 </style>

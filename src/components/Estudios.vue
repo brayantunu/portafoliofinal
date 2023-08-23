@@ -9,61 +9,57 @@
       <!-- <img src="../assets/brayan.jpeg" class="rounded-lg shadow-2xl xlx imagen2" /> -->
       <div class="background-overlay">
         <div class="contenedor">
-          <h1>¡Hola! Soy Brayan Tunubala<span>&#160;</span></h1>
+          <h1>HI, I'M BRAYAN<span>&#160;</span></h1>
         </div>
-        <p class="py-6">Apasionado desarrollador Fullstack con un enfoque especial en el
-          área de desarrollo de software.</p>
+        <p class="py-6">WEB DEVELOPER</p>
         <button class="bn">Download CV</button>
       </div>
     </div>
   </div>
-
-  <div class="content">
-    <h3 class="animated-title">SOBRE MI</h3>
+  
+  <div class="collapse bg-base-200">
+  <input type="radio" name="my-accordion-1" checked="checked" /> 
+  <div class="collapse-title text-xl font-medium flex-initial">
+  <p class="Informacion">SOBRE MI </p>
   </div>
-
-  <div class="container-estudios">
+  <div class="collapse-content"> 
+    <div class="container-estudios">
     <div class="image-container">
       <img src="../assets/spiderman.avif" alt="Mi imagen" class="animated-image">
     </div>
     <div class="info-container">
       <div class="con-info">
         <h2>Soy Brayan Tunubala</h2>
-        <h3>Buscar.</h3>
-        <p>
-          Apasionado desarrollador Fullstack con un enfoque especial en el
-          área de desarrollo de software. Mi objetivo se basa en la colaboración, excelencia responsabilidad
-          y aprendizaje continuo y estoy constantemente buscando oportunidades para crecer y aprender
-          .Estoy entusiasmada por aplicar mis habilidades y conocimientos soy creativo y tengo una
-          mentalidad abierta para enfrentar nuevos desafíos. Estoy dispuesto a asumir responsabilidades y
-          colaborar de manera efectiva con otros profesionales y así contribuir en equipo.
+        
+        <p class="sobremi">
+          Soy un apasionado de la tecnología con un enfoque especial en el desarrollo de software, y tambien tengo habilidades en la gestión de documentación y el manejo avanzado de paquete office. Mi objetivo se centra en la colaboración, la excelencia y la responsabilidad, siempre buscando oportunidades para crecer y aprender de manera continua. Me entusiasma aplicar mis habilidades y conocimientos, siendo creativo y una mentalidad abierta para enfrentar nuevos desafíos. Estoy dispuesto a asumir responsabilidades y colaborar de manera efectiva con otros profesionales para contribuir en equipo.
         </p>
       </div>
 
     </div>
   </div>
-
-
-  <div class="container-estudios">
-    <div class="info-container">
-      <div class="con-info">
-        <h2>Soy Brayan Tunubala</h2>
-        <h3>Buscar.</h3>
-        <p>
-          Apasionado desarrollador Fullstack con un enfoque especial en el
-          área de desarrollo de software. Mi objetivo se basa en la colaboración, excelencia responsabilidad
-          y aprendizaje continuo y estoy constantemente buscando oportunidades para crecer y aprender
-          .Estoy entusiasmada por aplicar mis habilidades y conocimientos soy creativo y tengo una
-          mentalidad abierta para enfrentar nuevos desafíos. Estoy dispuesto a asumir responsabilidades y
-          colaborar de manera efectiva con otros profesionales y así contribuir en equipo.
-        </p>
-      </div>
-
-    </div>
-    <div class="image-container">
-      <img src="../assets/spiderman.avif" alt="Mi imagen" class="animated-image">
-    </div>
   </div>
+</div>
+<div class="collapse bg-base-200">
+  <input type="radio" name="my-accordion-1" /> 
+  <div class="collapse-title text-xl font-medium">
+    Click to open this one and close others
+  </div>
+  <div class="collapse-content"> 
+    <p>hello</p>
+  </div>
+</div>
+<div class="collapse bg-base-200">
+  <input type="radio" name="my-accordion-1" /> 
+  <div class="collapse-title text-xl font-medium">
+    Click to open this one and close others
+  </div>
+  <div class="collapse-content"> 
+    <p>hello</p>
+  </div>
+</div>
+
+  
   
 </template>
 <script>
@@ -73,6 +69,10 @@ export default {
 </script>
 <style>
 /* card foto presentacion */
+
+.collapse{
+ width: 98%;
+}
 .card {
   background: #07182E;
   position: relative;
@@ -364,43 +364,11 @@ button:active {
 }
 
 
-/* animacion de sobre mi */
-.content {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.animated-title {
-  display: inline-block;
-  animation: animateTitle 2s linear infinite;
-}
-
-@keyframes animateTitle {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 
 /* sobre mi informacion detallada */
 .container-estudios {
   display: flex;
-  margin:30px 20px;
-  border-radius: 50px;
- background: #e0e0e0;
- box-shadow: 20px 20px 60px #bebebe,
-               -20px -20px 60px #ffffff;
-  
+  border-radius: 50px;  
  margin-bottom: 30px;
 }
 
@@ -438,5 +406,13 @@ button:active {
     box-shadow: 0 0 0 #0000ff;
     /* Color azul transparente */
   }
+}
+
+.sobremi{
+  margin-top: 20px;
+}
+
+.Informacion{
+  text-align: center;
 }
 </style>
